@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find your account</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px 0;
+    }
+
+    .box {
+      width: 100%;
+      max-width: 480px;
+      flex: 1;
+    }
+
+    .back-btn {
+      display: inline-block;
+      color: #000000;
+      text-decoration: none;
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      font-size: 14px;
+      color: #000000;
+      line-height: 1.4;
+      margin-bottom: 24px;
+    }
+
+    .desc a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .desc a:hover {
+      text-decoration: underline;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 14px;
+      border: 1px solid #dbdbdb;
+      border-radius: 12px;
+      outline: none;
+      margin-bottom: 14px;
+    }
+
+    .input-field:focus {
+      border-color: #a8a8a8;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #737373;
+      line-height: 1.45;
+      margin-bottom: 24px;
+    }
+
+    .continue-btn {
+      width: 100%;
+      padding: 13px;
+      background-color: #0095f6;
+      color: #ffffff;
+      border: none;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .continue-btn:hover {
+      background-color: #1877f2;
+    }
+
+    .footer {
+      width: 100%;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid #efefef;
+      margin-top: 40px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      font-size: 11px;
+      color: #737373;
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #737373;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 11px;
+      color: #737373;
+    }
+
+    .lang-select {
+      border: none;
+      background: transparent;
+      color: #737373;
+      font-size: 11px;
+      outline: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <a href="instagram.html" class="back-btn">&lt;</a>
+
+    <h1 class="title">Find your account</h1>
+    <p class="desc">
+      Enter your mobile number, username or email. <a href="#">Can't reset your password?</a>
+    </p>
+
+    <form onsubmit="return false;">
+      <input type="text" class="input-field" placeholder="Mobile number, username or email" required>
+      <p class="note">
+        You may receive WhatsApp and SMS notifications from us for security and login purposes.
+      </p>
+      <button type="submit" class="continue-btn">Continue</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#">Meta</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Jobs</a>
+      <a href="#">Help</a>
+      <a href="#">API</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Locations</a>
+      <a href="#">Instagram Lite</a>
+      <a href="#">Contact Uploading &amp; Non-Users</a>
+      <a href="#">Meta Verified</a>
+    </div>
+
+    <div class="footer-bottom">
+      <select class="lang-select">
+        <option>English</option>
+        <option>Español</option>
+        <option>Français</option>
+      </select>
+      <span>&copy; 2026 Instagram from Meta</span>
+    </div>
+  </div>
+
+
+  <style>
+    .demo-notice{position:fixed;z-index:9999;top:0;left:0;right:0;background:#fff3cd;color:#664d03;border-bottom:1px solid #ffecb5;padding:9px 12px;text-align:center;font:600 13px Arial,sans-serif}
+    body{padding-top:42px!important}
+  </style>
+  <div class="demo-notice">EDUCATIONAL UI DEMO — Do not enter real login details. Forms are non-functional.</div>
+
+</body>
+</html>
